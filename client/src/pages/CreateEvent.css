@@ -1,0 +1,121 @@
+/* CreateEvent.css - Styles for the event creation page */
+
+.create-event-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .create-event-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .create-event-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .create-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .half {
+    flex: 1;
+  }
+  
+  .create-event-form label {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .create-event-input,
+  .create-event-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+  
+  .create-event-textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .create-event-input:focus,
+  .create-event-textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .create-event-button {
+    background: linear-gradient(90deg, #00C9FF 0%, #9D4EDD 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+    margin-top: 0.75rem;
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .create-event-button:hover {
+    opacity: 0.9;
+  }
+  
+  .create-event-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .create-event-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    
+    .create-event-card {
+      padding: 1.5rem;
+    }
+  }
